@@ -539,8 +539,8 @@ body {
 }
 .icon.groupone::before {
   background-image: url(../images/groupone.svg);
+  fill: aqua;
 }
-
 .icon.grouptwo::before {
   background-image: url(../images/grouptwo.svg);
 }
@@ -556,6 +556,11 @@ body {
 .icon.groupsix::before {
   background-image: url(../images/groupsix.svg);
 }
-.marka li:hover {
+.marka .groupone:hover,
+.marka .grouptwo:hover,
+.marka .groupthree:hover,
+.marka .groupfour:hover,
+.marka .groupfive:hover,
+.marka .groupsix:hover {
   border: 1px solid #2196f3;
 }
