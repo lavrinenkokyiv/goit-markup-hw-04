@@ -523,44 +523,46 @@ body {
   box-sizing: border-box;
   border-radius: 4px;
   margin-bottom: 94px;
-}
-
-.marka .company + .company {
-  margin-left: 30px;
-}
-.company.icon::before {
   width: 170px;
   height: 92px;
-  display: block;
-  content: "";
-  background-size: auto;
-  background-repeat: no-repeat;
-  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.icon.groupone::before {
-  background-image: url(../images/groupone.svg);
-  fill: aqua;
+.one {
+  width: 41px;
+  height: 46.7px;
 }
-.icon.grouptwo::before {
-  background-image: url(../images/grouptwo.svg);
+.two {
+  width: 40px;
+  height: 52px;
 }
-.icon.groupthree::before {
-  background-image: url(../images/groupthree.svg);
+.three {
+  width: 43.46px;
+  height: 41.18px;
 }
-.icon.groupfour::before {
-  background-image: url(../images/groupfour.svg);
+.four {
+  width: 84.44px;
+  height: 40.62px;
 }
-.icon.groupfive::before {
-  background-image: url(../images/groupfive.svg);
+.five {
+  width: 62.54px;
+  height: 45.43px;
 }
-.icon.groupsix::before {
-  background-image: url(../images/groupsix.svg);
+.six {
+  width: 93.79px;
+  height: 43.93px;
+}
+.marka .company + .company {
+  margin-left: 30px;
 }
 .marka .groupone:hover,
 .marka .grouptwo:hover,
 .marka .groupthree:hover,
 .marka .groupfour:hover,
 .marka .groupfive:hover,
-.marka .groupsix:hover {
+.marka .groupsix:hover,
+.color:hover {
   border: 1px solid #2196f3;
+  fill: #2196f3;
 }
