@@ -213,6 +213,9 @@ nav {
   color: var(--blue-text);
 }
 .hero {
+  max-width: 1600px;
+  height: 600px;
+  margin: 0 auto;
   background: var(--background-dark);
   padding-top: 200px;
   padding-bottom: 200px;
