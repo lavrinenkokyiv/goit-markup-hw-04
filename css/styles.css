@@ -185,6 +185,9 @@ nav {
 .nav-site:focus {
   color: var(--blue-text);
 }
+.marg .item {
+  margin-left: 256px;
+}
 .nav-adm {
   display: flex;
   align-items: center;
@@ -197,9 +200,21 @@ nav {
   text-decoration: none;
   letter-spacing: 0.02em;
 }
-.nav-adm:hover,
-.nav-adm:focus {
+.nav-adm.lope:hover .envelope,
+.nav-adm.lope:hover,
+.nav-adm.lope:focus .envelope,
+.nav-adm.lope:focus {
   color: var(--blue-text);
+  fill: var(--blue-text);
+  cursor: pointer;
+}
+.nav-adm.smar:hover .smartphone,
+.nav-adm.smar:hover,
+.nav-adm.smar:focus .smartphone,
+.nav-adm.smar:focus {
+  color: var(--blue-text);
+  fill: var(--blue-text);
+  cursor: pointer;
 }
 .nav-adm-two {
   display: block;
@@ -410,7 +425,10 @@ nav {
   border-bottom: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
 }
-.site-photo .item:hover {
+.shadow {
+  display: block;
+}
+.shadow:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -420,25 +438,15 @@ nav {
 .envelope {
   width: 16px;
   height: 12px;
-  margin-top: 34px;
   margin-right: 10px;
-  margin-left: 303px;
   fill: var(--grey-text);
 }
 .smartphone {
   width: 10px;
   height: 16px;
-  margin-top: 32px;
   margin-right: 10px;
   margin-left: 30px;
   fill: var(--grey-text);
-}
-.envelope:hover,
-.smartphone:hover,
-.envelope:focus,
-.smartphone:focus {
-  fill: var(--blue-text);
-  cursor: pointer;
 }
 
 /* преимущества логотипы */
@@ -487,12 +495,13 @@ nav {
   border-radius: 50%;
 }
 .social-link:hover,
-.icon-instagram:hover,
-.icon-twitter:hover,
-.icon-facebook:hover,
-.icon-linkedin:hover {
+.social-link:hover .icon-instagram,
+.social-link:hover .icon-twitter,
+.social-link:hover .icon-facebook,
+.social-link:hover .icon-linkedin {
   background-color: var(--blue-text);
   fill: var(--second-text);
+  color: var(--second-text);
   cursor: pointer;
 }
 .icon-instagram {
@@ -518,7 +527,7 @@ nav {
 
 /* 6 компаний */
 
-.customer h2 {
+.customer h6 {
   margin-top: 0px;
   margin-bottom: 50px;
   text-align: center;
@@ -540,39 +549,61 @@ nav {
 .one {
   width: 41px;
   height: 46.7px;
+  fill: var(--icon-site-fill);
 }
 .two {
   width: 40px;
   height: 52px;
+  fill: var(--icon-site-fill);
 }
 .three {
   width: 43.46px;
   height: 41.18px;
+  fill: var(--icon-site-fill);
 }
 .four {
   width: 84.44px;
   height: 40.62px;
+  fill: var(--icon-site-fill);
 }
 .five {
   width: 62.54px;
   height: 45.43px;
+  fill: var(--icon-site-fill);
 }
 .six {
   width: 93.79px;
   height: 43.93px;
+  fill: var(--icon-site-fill);
 }
 .marka .company + .company {
   margin-left: 30px;
 }
-.marka .groupone:hover,
-.marka .grouptwo:hover,
-.marka .groupthree:hover,
-.marka .groupfour:hover,
-.marka .groupfive:hover,
-.marka .groupsix:hover,
+.groupone:hover,
+.groupone:hover .one,
+.grouptwo:hover,
+.grouptwo:hover .two,
+.groupthree:hover,
+.groupthree:hover .three,
+.groupfour:hover,
+.groupfour:hover .four,
+.groupfive:hover,
+.groupfive:hover .five,
+.groupsix:hover,
+.groupsix:hover .six,
 .color:hover {
-  border: 1px solid #2196f3;
   fill: var(--blue-text);
+  color: var(--blue-text);
+}
+
+.groupone:hover,
+.grouptwo:hover,
+.groupthree:hover,
+.groupfour:hover,
+.groupfive:hover,
+.groupsix:hover {
+  border: 1px solid #2196f3;
+  border-radius: 4px;
 }
 /* присоединяйтесь футер */
 
@@ -592,6 +623,7 @@ address {
   display: flex;
 }
 .foottwo {
+  margin-left: 70px;
   display: inline-flex;
   flex-direction: column;
 }
@@ -624,7 +656,6 @@ address {
 }
 
 .social-footer {
-  margin-left: 70px;
   list-style-type: none;
   display: flex;
 }
@@ -670,7 +701,6 @@ address {
   fill: var(--second-text);
 }
 .welcome {
-  margin-left: 70px;
   margin-bottom: 20px;
   font-style: normal;
   font-weight: bold;
