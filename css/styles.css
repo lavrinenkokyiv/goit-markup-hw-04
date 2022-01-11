@@ -108,6 +108,7 @@ nav {
 }
 .markas {
   display: inline-flex;
+  margin-left: auto;
 }
 .marka {
   display: flex;
@@ -181,12 +182,12 @@ nav {
 .markas .item + .item {
   margin-left: 50px;
 }
+.marg .item + .item {
+  margin-left: 30px;
+}
 .nav-site:hover,
 .nav-site:focus {
   color: var(--blue-text);
-}
-.marg .item {
-  margin-left: 256px;
 }
 .nav-adm {
   display: flex;
@@ -312,7 +313,7 @@ nav {
   color: var(--general-text);
 }
 .teamwork p {
-  margin-bottom: 30px;
+  margin-bottom: 16px;
   text-align: center;
   font-weight: normal;
   font-size: 16px;
